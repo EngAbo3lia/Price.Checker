@@ -2,12 +2,13 @@
 
 <h1 align="center">
   <b> Al-Anfal Price Checker Solution <p align="center">
-  </p></h1><br/>
-#### Project Overview
+  </p></h1><br/>  
+    
+## Project Overview ##
 
 The Al-Anfal Price Checker Solution is a comprehensive application designed to streamline the process of checking product prices within the SAP Business One environment. This solution leverages .NET WinForms, SAP Business One Service Layer, and OData services to provide a seamless and efficient user experience for product information retrieval and display.
 
-#### Key Features
+## Key Features ##
 
 - **User-Friendly Interface**: Intuitive WinForms interface for easy navigation and use.
 - **Real-Time Data Retrieval**: Instant access to product information and prices from SAP Business One.
@@ -17,57 +18,53 @@ The Al-Anfal Price Checker Solution is a comprehensive application designed to s
 - **Secure Credentials Management**: Robust handling of server credentials and session data.
 - **Service Layer Integration**: Comprehensive utilization of SAP B1 Service Layer for data operations.
 
-#### Technical Details
+## Technical Details ##
 
-##### Price Checker (Win Form App)
+### Price Checker (Win Form App) ###
 
 - Main Entry Point
   - Program Class
     - **Description**: The primary entry point for the application.
     - **Functionality**: Initializes a new instance of `ProductService` with the required credentials and database implementation type.
 
-##### Services
+### Services ###
 
 - ProductService Class
   - **Description**: Service layer responsible for product-related operations.
   - **Functionality**: Implements the `Find Product` function to fetch product details based on barcode input.
 
-##### Forms
+### Forms ###
 
 - ProductInfo Form
 
   - **Description**: Main screen of the application.
 
-  - Functionality
-
-    :
+  - Functionality:
 
     - Handles splash screen timing.
     - Sends barcode data to `ProductService`.
     - Updates UI fields with product details returned from the service.
 
-##### Helpers
+### Helpers ###
 
 - ControlExtensions Class
   - **Description**: Extends standard WinForms controls.
   - **Functionality**: Provides additional properties and methods to enhance standard controls.
 
-##### Service Layer Helper (Helper Lib)
+### Service Layer Helper (Helper Lib) ###
 
 - Connected Services
   - ODataService / OData
     - **Description**: Enables consumption of Service Layer OData services from .NET via WCF.
     - **Functionality**: Contains connected service reference models.
 
-##### Connection
+### Connection ###
 
 - **Credentials Class**
 
   - **Description**: Stores server credentials for test and production environments.
 
-  - Attributes
-
-    :
+  - Attributes:
 
     - Service Layer URI
     - Company DB
@@ -78,40 +75,38 @@ The Al-Anfal Price Checker Solution is a comprehensive application designed to s
 
   - **Description**: Container for service layer session data.
 
-##### Models
+### Models ###
 
 - Product Class
   - **Description**: Represents the product model.
   - **Attributes**: Includes methods and properties related to product information.
 
-##### Services
+### Services ###
 
 - ServiceLayer Class
 
   - **Description**: Consumes SAP Business One data and services.
 
-  - Functionality
-
-    :
+  - Functionality:
 
     - Connect and disconnect from the SAP B1 Service Layer.
     - Find products and retrieve their prices.
     - Prepare product data for display in the `ProductInfo` form.
 
-##### Helpers
+### Helpers ###
 
 - ApiHelper Class
   - **Description**: Manages API requests to the SAP B1 Service Layer.
   - **Functionality**: Initializes the RestSharp client with server credentials for making GET or POST requests.
 
-#### Tools & Technologies
+### Tools & Technologies ###
 
 - **Programming Languages**: C#, .NET
 - **Frameworks**: WinForms, WCF
 - **APIs**: SAP Business One Service Layer, OData
 - **Libraries**: RestSharp
 
-#### Additional Information
+### Additional Information ####
 
 - **Development Duration**: 3 months
 
@@ -121,9 +116,7 @@ The Al-Anfal Price Checker Solution is a comprehensive application designed to s
 
 - **Role**: Lead Developer
 
-- Responsibilities
-
-  :
+- Responsibilities:
 
   - Designed the application architecture.
   - Developed the main features and functionalities.
@@ -134,7 +127,9 @@ The Al-Anfal Price Checker Solution is a comprehensive application designed to s
 This project showcases expertise in developing enterprise-level solutions with SAP Business One integration, highlighting skills in .NET development, API integration, and user interface design.
 
 
-### How to Install
+## How to Install ##
+
+
 [![How to Install][HowToInstall1]]()
 
 [![How to Install][HowToInstall2]]()
